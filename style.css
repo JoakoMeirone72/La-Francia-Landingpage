@@ -1,0 +1,1239 @@
+@import './assets/styles/styles.css';
+
+html, body {
+    background-color: var(--color-calido0);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color-calido5);
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+  .divisor-line {
+    width: 70%;
+    height: 3px;
+    background-color: var(--color-calido5);
+    border-radius: 5px;
+  }
+
+/*--------------------HEADER---------------------*/
+
+header {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-images {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideShow 30s infinite;
+}
+
+@keyframes slideShow {
+    0% {
+        background-image: url('./assets/images/DSC00321.jpeg');
+      }
+      16.67% {
+        background-image: url('./assets/images/DSC00127.jpeg');
+      }
+      33.33% {
+        background-image: url('./assets/images/AVY09690.jpeg');
+      }
+      50% {
+        background-image: url('./assets/images/DSC00304.jpeg');
+      }
+      66.67% {
+        background-image: url('./assets/images/10-DSC05734.jpg');
+      }
+      83.33% {
+        background-image: url('./assets/images/DSC00341.jpeg');
+      }
+      100% {
+        background-image: url('./assets/images/DSC00321.jpeg');
+      }
+}
+
+#blend-image {
+    width: 100%;
+    height: 25vh;
+    align-self: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+}
+
+
+#logo {
+    position: absolute;
+    width: 50%;
+    margin-bottom: 5%;
+    filter: drop-shadow(10px 0px 15px rgba(0, 0, 0, 1));
+}
+
+
+/*-----------------FIN HEADER---------------------*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#scrollup-btn {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: none;
+    box-shadow: none;
+    right: 50px;
+    bottom: 125px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+
+    ion-icon {
+        font-size: 45px;
+        color: white;
+    }
+}
+
+#scrollup-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#wpp-btn {
+    display: flex;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #25d366;
+    right: 20px;
+    bottom: 30px;
+    z-index: 10;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: box-shadow 0.3s ease;
+
+    ion-icon {
+        font-size: 50px;
+    }
+}
+
+#wpp-btn:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.8);
+}
+
+/*------------------ABOUT US----------------------*/
+
+.about-us-container {
+    width: 70%;
+    display: flex;
+    margin: 50px 0;
+
+    img {
+        width: 35%;
+        height: auto;
+    }
+}
+
+.title-section {
+    font-size: 48px;
+    margin: 10px 0 20px 0;
+    font-family: var(--gagalin-font), var(--shrikhand-font);
+    color: var(--color-calido5);
+}
+
+.description {
+    margin: 0;
+    font-size: 25px;
+    font-family: var(--montserrat-font);
+    font-weight: 600;
+    color: var(--content-color);
+    text-wrap: wrap;
+    text-align: center;
+}
+
+/*------------------FIN ABOUT US------------------*/
+
+/*---------------------REDES----------------------*/
+
+.social-container {
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    h1 {
+        width: 80%;
+        align-self: center;
+        text-align: end;
+    }
+}
+
+.links-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-network-link {
+    width: 30%;
+    height: 80%;
+    background-color: var(--color-calido5);
+    box-shadow: inset 20px 20px 60px var(--color-calido5),
+            inset -20px -20px 60px var(--color-calido7);
+    border-radius: 35px;
+    /* border: 5px solid white; */
+    text-decoration: none;  
+    font-size: 20px;
+    font-family: var(--montserrat-font);
+    transition: transform 0.3s ease;
+}
+
+.social-network-link:hover {
+    transform: scale(1.03);
+}
+
+.sn-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+
+    .link-img {
+
+        font-size: 150px;
+        color: white;
+    }
+}
+
+.sn-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+/*-------------------FIN REDES--------------------*/
+
+/*-------------------PRODUCTOS--------------------*/
+
+.products-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-calido7);
+    margin: 3% 0;
+    border-top: 10px solid var(--color-calido0);
+}
+
+#blend-image-product-reverse {
+    width: 100%;
+    height: 25vh;
+    align-self: start;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    margin-top: -10px;
+}
+
+#blend-image-product {
+    width: 100%;
+    height: 25vh;
+    align-self: end;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+}
+
+.products-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 10% 0;
+    align-items: center;
+
+    h2 {
+        font-size: 50px;
+        margin: 10px 0 20px 0;
+        font-family: var(--gagalin-font), var(--shrikhand-font);
+        color: white;
+    }
+}
+
+.product-article {
+    width: 95%;
+    height: 65vh;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button {
+        width: 70px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        box-shadow: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        outline: none;
+
+        
+        ion-icon {
+            font-size: 60px;
+            color: white;
+        }
+    }
+
+    button:hover {
+        transform: scale(1.15);
+    }
+}
+
+.pan-container, .cookie-container,
+.pepa-container, .veganita-container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 5px rgba(62, 62, 62, 0.8);
+    transition: background-image 0.5s ease;
+}
+
+.title-container {
+    display: flex;
+    gap: 40px;
+    width: 55%;
+    align-items: center;
+}
+
+.linea {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+.title-card-img-container {
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    justify-content: left;
+}
+
+.title-card-img {
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    margin-left: 15px;
+    background-image: url(./assets/images/paper-clip.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(5px 0px 5px rgba(0, 0, 0, 1));
+    align-self: start;
+    justify-self: self-start;
+    
+    h3 {
+        margin: 0;
+        font-size: 35px;
+        font-family: var(--gagalin-font);
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        text-wrap: wrap;
+        text-align: center;
+        color: rgb(45, 45, 45);
+        font-family: var(--montserrat-font);
+    }
+}
+
+/*-----------------FIN PRODUCTOS------------------*/
+
+/*----------------MAPA Y FORMULARIO---------------*/
+
+.map-form-container {
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.map-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-rosario {
+    width: 80%;
+    height: 70%;
+    background-image: url('./assets/images/mapa-rosario.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px 1px rgb(65, 65, 65, 0.8);
+}
+
+
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    height: 15%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family: var(--montserrat-font);
+    background-color: var(--color-calido7);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 10px 1px rgb(65, 65, 65, 0.8);
+
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+    width: 80%;
+    height: 50%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    resize: none;
+    font-family: var(--montserrat-font);
+    background-color: var(--color-calido7);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 10px 1px rgba(65, 65, 65, 0.8);
+
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  textarea::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-calido5);
+    border-radius: 25px;
+    border: 3px solid white;
+  }
+
+button {
+    width: 60%;
+    height: 15%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-calido5);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: inset 20px 20px 60px var(--color-calido5),
+            inset -20px -20px 60px var(--color-calido7);
+}
+
+
+/*--------------FIN MAPA Y FORMULARIO-------------*/
+
+/*--------------------FOOTER----------------------*/
+
+footer {
+    width: 100%;
+    height: 40%;
+    background: radial-gradient(circle, rgba(18,107,159,1) 5%, rgba(38,55,120,1) 66%, rgba(23,35,79,1) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.logo-footer-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+#light-logo {
+    width: 10%;
+}
+
+.line {
+    width: 50%;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.info-general-container {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--montserrat-font);
+    color: white;
+}
+
+h3 {
+    margin: 15px 15px 5px 15px;
+}
+
+.info-img {
+    font-size: 40px;
+    color: white;
+    z-index: 100;
+}
+
+.link-info {
+    text-decoration: none;
+    color: white;
+}
+
+#middle-option {
+    margin-left: 50px;
+}
+
+#developer-contact {
+    font-family: var(--montserrat-font);
+    color: rgb(150, 150, 210);
+    font-weight: 500;
+
+    a {
+        cursor: pointer;
+        color: rgb(159, 159, 210);
+        text-decoration: underline;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: whitesmoke;
+    }
+}
+
+
+/*--------------------FIN FOOTER------------------*/
+
+/*-----------------RESPONSIVE MOBILE--------------*/
+
+@media (max-width: 480px) {
+
+
+    #wpp-btn {
+        width: 75px;
+        height: 75px;
+        bottom: 25px;
+        right: 15px;
+
+        ion-icon {
+            font-size: 50px;
+        }
+    }
+
+    #scrollup-btn {
+        width: 20px;    
+        height: 20px;
+        bottom: 135px;
+        right: 62px;
+
+        ion-icon {
+            font-size: 45px;
+        }
+    }
+
+    /*-----ABOUT US------*/
+    
+    header {
+        height: 40vh;
+    }
+
+    .background-images {
+        height: 40vh;
+    }
+
+    .title-section {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #logo {
+        width: 400px;
+    }
+
+    #blend-image {
+        height: 11vh;
+    }
+
+    .about-us-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+
+        img {
+            display: none;
+        }
+    }
+
+    .description {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+
+    /*-----FIN ABOUT US-----*/
+
+    /*---------REDES--------*/
+
+
+    .social-container {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: 30px 0;
+
+        h1 {
+            text-align: center;
+        } 
+    }
+
+    .links-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-network-link {
+        width: 95%;
+        height: 150px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    
+    .sn-container {
+        flex-direction: row;
+        gap: 15px;
+
+        .link-img {
+            font-size: 100px;
+        }
+    }
+
+    .sn-info-container {
+        width: 180px;
+        align-items: start;
+
+        h3 {
+            margin-left: 0;
+        }
+        p {
+            width: 180px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+        }
+    }
+
+    /*-------FIN REDES------*/
+    
+    /*-------PRODUCTOS------*/
+
+    #blend-image-product-reverse {
+        height: 11vh;
+    }
+
+    #blend-image-product {
+        height: 11vh;
+    }
+
+    .products-container {
+        width: 100%;
+
+        h1 {
+            align-self: center;
+            margin-top: 20px;
+        }
+    }
+
+    .title-container {
+        width: 70%;
+        gap: 10px;
+        margin-top: 20px;
+
+        h2 {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        .linea {
+            height: 2px;
+        }
+    }
+
+    .product-article {
+        height: 25vh;
+        margin: 10px 0;
+
+        button {
+            width: 30px;
+
+            ion-icon {
+                font-size: 80px;
+            }
+        }
+    }
+
+    .pan-container, .cookie-container,
+    .pepa-container, .veganita-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .title-card-img {
+        width: 45%;
+        height: 50%;
+        margin-top: -2.5px;
+        margin-left: 5px;
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    /*-----FIN PRODUCTOS----*/
+
+    /*------MAPA Y FORM-----*/
+
+    .map-form-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .map-container {
+        width: 90%;
+        height: 400px;
+    }
+
+    #img-rosario {
+        width: 80%;
+    }
+
+    form {
+        width: 100%;
+        height: 425px;
+    }
+
+    input {
+        font-size: 12px;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    textarea {
+        font-size: 12px;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+
+    /*----FIN MAPA Y FORM---*/
+
+    /*--------FOOTER--------*/
+
+    .footer-container {
+        margin-top: 40px;
+    }
+
+    .info-general-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .logo-footer-container {
+        width: 90%;
+    }
+
+    #light-logo {
+        width: 35%;
+    }
+    
+    .line {
+        height: 2px;
+    }
+
+    .link-info {
+        font-size: 12px;
+    }
+
+    #middle-option {
+        margin: 0;
+    }
+
+    #developer-contact {
+        font-size: 12px;
+    }
+
+    /*-------FIN FOOTER-----*/
+
+}
+/*-----------FIN RESPONSIVE MOBILE-----------*/
+
+/*---------RESPONSIVE MOBILE LANDSCAPE-------*/
+
+@media (min-width: 481px) and (max-width: 850px) and (orientation: landscape) {
+
+    #wpp-btn {
+        width: 75px;
+        height: 75px;
+        bottom: 25px;
+        right: 15px;
+
+        ion-icon {
+            font-size: 50px;
+        }
+    }
+
+    #scrollup-btn {
+        width: 20px;    
+        height: 20px;
+        bottom: 135px;
+        right: 62px;
+
+        ion-icon {
+            font-size: 45px;
+        }
+    }
+
+    /*--------HEADER--------*/
+
+    header {
+        height: 85vh;
+    }
+
+    .background-images {
+        height: 85vh;
+    }
+
+    #blend-image {
+        height: 30vh;
+    }
+
+    #logo {
+        width: 65%;
+    }
+
+    /*------FIN HEADER-------*/
+
+    /*--------ABOUT US-------*/
+
+    .about-us-container {
+        width: 90%;
+
+        img {
+            width: 35%;
+        }
+
+        h1 {
+            margin-left: 20px;
+        }
+    }
+
+    .title-section {
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 15px;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    /*------FIN ABOUT US-----*/
+
+    /*---------REDES---------*/
+
+    .social-container {
+        width: 90%;
+        height: 70vh;
+    }
+
+    .social-network-link {
+        width: 30%;
+        height: 100%;
+        font-size: 17px;
+    }
+
+    .sn-container {
+        gap: 5px;
+        .link-img {
+            font-size: 90px;
+        }
+    }
+
+    .sn-info-container {
+        p {
+            font-size: 9px;
+        }
+    }
+
+    /*-------FIN REDES-------*/
+
+    /*--------PRODUCTOS-------*/
+
+    #blend-image-product-reverse {
+        height: 30vh;
+    }
+
+    #blend-image-product {
+        height: 30vh;       
+    }
+
+    .products-container {
+        width: 100%;
+
+        h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+    }
+
+    .product-article {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .pan-container, .cookie-container, 
+    .pepa-container, .veganita-container {
+        width: 90%;
+    }
+
+    .title-card-img {
+        height: 55%;
+    }
+
+    /*------FIN PRODUCTOS-----*/
+
+    /*-------MAPA Y FORM-------*/
+
+    .map-form-container {
+        width: 95%;
+        height: 90vh;
+    }
+
+    /*-----FIN MAPA Y FORM----*/
+
+    /*--------FOOTER---------*/
+
+    .footer-container {
+        width: 100%;
+    }
+
+    #light-logo {
+        width: 20%;
+    }
+
+    .info-general-container {
+        width: 95%;
+    }
+    
+    .link-info {
+        font-size: 13px;
+    }
+
+    #middle-option {
+        margin-left: 40px;
+    }
+
+    /*-------FIN FOOTER------*/
+}
+
+/*------FIN RESPONSIVE MOBILE LANDSCAPE------*/
+
+/*--------------RESPONSIVE TABLET------------*/
+
+@media (min-width: 481px) and (max-width: 850px) and (orientation: portrait) {
+
+    #wpp-btn {
+        width: 120px;
+        height: 120px;
+
+        ion-icon {
+            font-size: 70px;
+        }
+    }
+
+    #scrollup-btn {
+        width: 80px;
+        height: 80px;
+        bottom: 150px;
+        right: 42px;
+
+        ion-icon {
+            font-size: 65px;
+        }
+    }
+
+    /*--------HEADER--------*/
+
+    header {
+        height: 40vh;
+    }
+
+    .background-images {
+        height: 40vh;
+    }
+
+    #blend-image {
+        height: 15vh;
+    }
+
+    #logo {
+        width: 80%;
+    }
+
+    /*------FIN HEADER-------*/
+
+    /*--------ABOUT US-------*/
+
+    .about-us-container {
+        width: 90%;
+
+        img {
+            width: 45%;
+        }
+
+        h1 {
+            margin-left: 20px;
+        }
+    }
+
+    .title-section {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+        margin-left: 20px;
+        text-align: start;
+    }
+
+    /*------FIN ABOUT US-----*/
+
+    /*---------REDES---------*/
+
+    .social-container {
+        width: 90%;
+        height: 35vh;
+    }
+
+    .social-network-link {
+        width: 30%;
+        font-size: 17px;
+    }
+
+    .sn-container {
+
+        .link-img {
+            font-size: 120px;
+        }
+    }
+
+    .sn-info-container {
+        p {
+            font-size: 10px;
+        }
+    }
+
+    /*-------FIN REDES-------*/
+
+    /*--------PRODUCTOS-------*/
+
+    #blend-image-product-reverse {
+        height: 15vh;
+    }
+
+    #blend-image-product {
+        height: 15vh;        
+    }
+
+    .products-container {
+        width: 100%;
+
+        h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+    }
+
+    .product-article {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .pan-container, .cookie-container, 
+    .pepa-container, .veganita-container {
+        width: 90%;
+    }
+
+    /*------FIN PRODUCTOS-----*/
+
+    /*-------MAPA Y FORM-------*/
+
+    .map-form-container {
+        width: 95%;
+        height: 45vh;
+    }
+
+    /*-----FIN MAPA Y FORM----*/
+
+    /*--------FOOTER---------*/
+
+    .footer-container {
+        width: 100%;
+    }
+
+    #light-logo {
+        width: 20%;
+    }
+
+    .info-general-container {
+        width: 95%;
+    }
+
+    /*-------FIN FOOTER------*/
+}
+
+/*----------FIN RESPONSIVE TABLET------*/

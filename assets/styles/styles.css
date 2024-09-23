@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shrikhand&family=Permanent+Marker&display=swap');
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../fonts/Gagalin-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+
+    /*COLORES CALIDOS*/
+
+    --color-calido0: #fff1da;
+    --color-calido1: #f2d5c0;
+    --color-calido2: #e5b990;
+    --color-calido3: #d79b70;
+    --color-calido4: #fddbd8;
+    --color-calido5: #92443a;
+    --color-calido6: #a56546;
+    --color-calido7: #debaa1;
+    --color-calido8: #f6e9ce;
+    --color-calido9: #e4d4c8;
+    --color-calido10: #d0b49f;
+    --color-calido11: #a47551;
+    --color-calido12: #523a28;
+    --color-calido13: #f2e4cf;
+    --color-calido14: #d09064;
+    --color-calido15: #a96036;
+    --color-calido16: #dbc4af;
+
+    /*COLORES*/
+
+    --blue-color: #283A81;
+    --red-color: #AA1E22;
+    --content-color: #444444;
+
+    /*FUENTES DE TEXTO*/
+
+    --lora-font: 'Lora';
+    --belleza-font: 'Belleza';
+    --montserrat-font: 'Montserrat';
+    --shrikhand-font: 'Shrikhand';
+    --permanent-font: 'Permanent Marker';
+    --gagalin-font: 'Gagalin';
+}
