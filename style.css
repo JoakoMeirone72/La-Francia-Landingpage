@@ -173,10 +173,12 @@ main {
 
 .title-section {
     font-size: 48px;
+    font-weight: 100;
     margin: 10px 0 20px 0;
     font-family: var(--gagalin-font), var(--shrikhand-font);
     color: var(--color-calido5);
 }
+
 
 .description {
     margin: 0;
@@ -393,6 +395,10 @@ main {
     gap: 40px;
     width: 55%;
     align-items: center;
+
+    h2 {
+        font-weight: 100;
+    }
 }
 
 .linea {
@@ -429,6 +435,7 @@ main {
         font-family: var(--gagalin-font);
         text-wrap: wrap;
         text-align: center;
+        font-weight: 100;
     }
 }
 

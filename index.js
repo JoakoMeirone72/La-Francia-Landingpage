@@ -21,84 +21,84 @@ const Panes = [
     {
         image: './assets/images/productos/AVY09756.jpeg',
         name: 'BLANCO',
-        description: 'elaborado con masa madre, avena gruesa molida y harina integral. Especial sin semillas',
+        description: 'Elaborado con masa madre, avena gruesa molida y harina integral. Especial sin semillas',
         color: '#8FACE5',
         containerColor: 'rgba(143, 172, 229, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09686.jpeg',
         name: 'DOBLE INTEGRAL',
-        description: 'elaborado con masa madre, harina integral fina y gruesa. Además cuenta también con avena gruesa molida y salvado',
+        description: 'Elaborado con masa madre, harina integral fina y gruesa. Además cuenta también con avena gruesa molida y salvado',
         color: '#819E71',
         containerColor: 'rgba(129, 158, 113, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09690.jpeg',
         name: 'SIN SAL',
-        description: 'elaborado con masa madre, avena gruesa molida, harina integral. Bañado en semillas de lino y chía, sin sal agregada',
+        description: 'Elaborado con masa madre, avena gruesa molida, harina integral. Bañado en semillas de lino y chía, sin sal agregada',
         color: '#A9B0B6',
         containerColor: 'rgba(169, 176, 182, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09695.jpeg',
         name: 'TRADICIONAL',
-        description: 'elaborado con masa madre, salvado de trigo y harina integral. Cubierto con semillas de lino y girasol',
+        description: 'Elaborado con masa madre, salvado de trigo y harina integral. Cubierto con semillas de lino y girasol',
         color: '#E3C167',
         containerColor: 'rgba(227, 193, 103, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09698.jpeg',
         name: 'ACTIVO',
-        description: 'elaborado con harina integral de trigo, amasado con mix de semillas energéticas activadas y con doble avena en su interior',
+        description: 'Elaborado con harina integral de trigo, amasado con mix de semillas energéticas activadas y con doble avena en su interior',
         color: '#8DB571',
         containerColor: 'rgba(141, 181, 113, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09704.jpeg',
         name: 'DOBLE SALVADO',
-        description: 'elaborado con masa madre, salvado de trigo y harina integral. Cubierto con una lluvia de salvado puro. Especial sin semillas',
+        description: 'Elaborado con masa madre, salvado de trigo y harina integral. Cubierto con una lluvia de salvado puro. Especial sin semillas',
         color: '#BE8075',
         containerColor: 'rgba(190, 128, 117, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09706.jpeg',
         name: 'CALABAZA',
-        description: ' elaborado con gran porcentaje de puré de calabaza, harina integral y masa madre. En su superficie se encuentra una lluvia de semillas de sésamo integral',
+        description: 'Elaborado con gran porcentaje de puré de calabaza, harina integral y masa madre. En su superficie se encuentra una lluvia de semillas de sésamo integral',
         color: '#DF9B6C',
         containerColor: 'rgba(223, 155, 108, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09714.jpeg',
         name: 'ZAPALLO Y CÚRCUMA',
-        description: 'este especial pan cuenta con gran cantidad de puré de zapallo y cúrcuma en su amasado. Elaborado con harina integral de grano entero y bañado en semillas sésamo',
+        description: 'Este especial pan cuenta con gran cantidad de puré de zapallo y cúrcuma en su amasado. Elaborado con harina integral de grano entero y bañado en semillas sésamo',
         color: '#A46CA1',
         containerColor: 'rgba(164, 108, 161, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09730.jpeg',
         name: 'PASAS DE UVA',
-        description: 'amasado con pasas de uva y elaborado con masa madre, salvado de trigo y harina integral. Agregado especial de semillas de chía en cada rodaja',
+        description: 'Amasado con pasas de uva y elaborado con masa madre, salvado de trigo y harina integral. Agregado especial de semillas de chía en cada rodaja',
         color: '#A28ED6',
         containerColor: 'rgba(162, 142, 214, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09737.jpeg',
         name: 'PAPA',
-        description: 'elaborado con papa natural y fermentado controladamente por 14 horas',
+        description: 'Elaborado con papa natural y fermentado controladamente por 14 horas',
         color: '#545255',
         containerColor: 'rgba(84, 82, 85, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09772.jpeg',
         name: 'TRES HARINAS',
-        description: 'elaborado con harina 100% integral de centeno, sarraceno y trigo. Cubierto con semillas de sésamo y chía',
+        description: 'Elaborado con harina 100% integral de centeno, sarraceno y trigo. Cubierto con semillas de sésamo y chía',
         color: '#DE72C4',
         containerColor: 'rgba(222, 114, 196, 0.9)'
     },
     {
         image: './assets/images/productos/AVY09779.jpeg',
         name: 'MULTICEREAL',
-        description: 'elaborado con variedad de semillas: chía, lino, girasol, sésamo y quinoa. Cuenta también con masa madre, salvado de trigo y harina integral',
+        description: 'Elaborado con variedad de semillas: chía, lino, girasol, sésamo y quinoa. Cuenta también con masa madre, salvado de trigo y harina integral',
         color: '#E76471',
         containerColor: 'rgba(231, 100, 113, 0.9)'
     },
@@ -109,28 +109,28 @@ const Cookies = [
     {
         image: './assets/images/productos/DSC00109.jpeg',
         name: 'NARANJA Y LINO',
-        description: ' cookies de harina integral y avena. En su amasado cuenta con agregado de semillas de lino, combinándolo con un rico sabor a naranja',
+        description: 'Cookies de harina integral y avena. En su amasado cuenta con agregado de semillas de lino, combinándolo con un rico sabor a naranja',
         color: '#F17D51',
         containerColor: 'rgba(241, 125, 81, 0.9)'
     },
     {
         image: './assets/images/productos/DSC00126.jpeg',
         name: 'LIMÓN Y CHÍA',
-        description: 'cookies de harina integral y avena. En su amasado cuenta con agregado de semillas de chía, combinándolo con un rico sabor a limón',
+        description: 'Cookies de harina integral y avena. En su amasado cuenta con agregado de semillas de chía, combinándolo con un rico sabor a limón',
         color: '#E5C451',
         containerColor: 'rgba(229, 196, 81, 0.9)'
     },
     {
         image: './assets/images/productos/DSC00245.jpeg',
         name: 'ALGARROBA Y LINO',
-        description: 'cookies de harina de algarroba, harina integral y avena. En su amasado cuenta con agregado de semillas de lino',
+        description: 'Cookies de harina de algarroba, harina integral y avena. En su amasado cuenta con agregado de semillas de lino',
         color: '#85B38A',
         containerColor: 'rgba(133, 179, 138, 0.9)'
     },
     {
         image: './assets/images/productos/DSC00306.jpeg',
         name: 'VAINILLA Y PASAS DE UVA',
-        description: 'cookies de harina integral y avena. En su amasado cuenta con agregado de pasas de uva, perfecta combinación con su sabor avainillado',
+        description: 'Cookies de harina integral y avena. En su amasado cuenta con agregado de pasas de uva, perfecta combinación con su sabor avainillado',
         color: '#DC8299',
         containerColor: 'rgba(220, 130, 153, 0.9)'
     },
@@ -140,21 +140,21 @@ const Pepas = [
     {
         image: './assets/images/Productos/DSC00328.jpeg',
         name: 'MEMBRILLO Y CHÍA',
-        description: 'elaboradas con avena y harina integral, rellenas con membrillo. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
+        description: 'Elaboradas con avena y harina integral, rellenas con membrillo. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#CC5754',
         containerColor: 'rgba(204, 87, 84, 0.9)'
     },
     {
         image: './assets/images/Productos/DSC00272.jpeg',
         name: 'ALGARROBA Y MEMBRILLO',
-        description: 'elaboradas con avena, harina integral y harina de algarroba, rellenas con membrillo. Fuente de fibra y proteína',
+        description: 'Elaboradas con avena, harina integral y harina de algarroba, rellenas con membrillo. Fuente de fibra y proteína',
         color: '#735DA4',
         containerColor: 'rgba(115, 93, 164, 0.9)'
     },
     {
         image: './assets/images/Productos/DSC00355.jpeg',
         name: 'BATATA Y CHÍA',
-        description: 'elaboradas con avena y harina integral, rellenas con batata. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
+        description: 'Elaboradas con avena y harina integral, rellenas con batata. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#D2A272',
         containerColor: 'rgba(210, 162, 114, 0.9)'
     },
@@ -164,28 +164,28 @@ const Veganitas = [
     {
         image: './assets/images/Productos/10-DSC05734.jpg',
         name: 'ALGARROBA Y NUEZ',
-        description: ' galletitas integrales y veganas, con harina de algarroba y agregado de nueces en su interior',
+        description: ' Galletitas integrales y veganas, con harina de algarroba y agregado de nueces en su interior',
         color: '#B85719',
         containerColor: 'rgba(184, 87, 25, 0.9)'
     },
     {
         image: './assets/images/Productos/9-DSC05718.jpg',
         name: 'LIMÓN Y CHÍA',
-        description: 'galletitas integrales y veganas, suave sabor a limón, combinado con la crocantes de las semillas de chía',
+        description: 'Galletitas integrales y veganas, suave sabor a limón, combinado con la crocantes de las semillas de chía',
         color: '#D5C800',
         containerColor: 'rgba(213, 200, 0, 0.9)'
     },
     {
         image: './assets/images/Productos/18-DSC05703.jpg',
         name: 'COCO Y AVENA',
-        description: ' galletitas integrales y veganas, con agregado de avena y suave sabor a coco',
+        description: ' Galletitas integrales y veganas, con agregado de avena y suave sabor a coco',
         color: '#2C89DA',
         containerColor: 'rgba(44, 137, 218, 0.9)'
     },
     {
         image: './assets/images/Productos/manzanagranola.jpeg',
         name: 'MANZANA Y GRANOLA',
-        description: ' galletitas integrales y veganas, cuentan con pedacitos de granola combinados con el rico sabor de la manzana',
+        description: ' Galletitas integrales y veganas, cuentan con pedacitos de granola combinados con el rico sabor de la manzana',
         color: '#F44A41',
         containerColor: 'rgba(244, 74, 65, 0.9)'
     },
