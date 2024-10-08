@@ -196,10 +196,11 @@ main {
 
 .social-container {
     width: 90%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+    align-items: center;
 
     h1 {
         width: 80%;
@@ -210,57 +211,68 @@ main {
 
 .links-container {
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 100%;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 .social-network-link {
-    width: 30%;
-    height: 80%;
-    background-color: var(--color-calido5);
-    box-shadow: inset 20px 20px 60px var(--color-calido5),
-            inset -20px -20px 60px var(--color-calido7);
-    border-radius: 35px;
-    /* border: 5px solid white; */
+    width: 70%;
+    height: 30%;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 5px 1px rgb(65, 65, 65, 0.8);
+    background-color: var(--color-calido7);
     text-decoration: none;  
     font-size: 20px;
     font-family: var(--montserrat-font);
-    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    border: 3px solid var(--color-calido5);
 }
 
 .social-network-link:hover {
-    transform: scale(1.03);
+    box-shadow: inset 0px 0px 10px 1px rgb(65, 65, 65, 0.8);;
 }
 
 .sn-container {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 5%;
     color: white;
+    gap: 5%;
 
     .link-img {
 
-        font-size: 150px;
-        color: white;
+        font-size: 100px;
+        color: var(--color-calido12);
     }
 }
 
 .sn-info-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+
+    h3 {
+        margin: 0;
+    }
     
     p {
         margin: 0;
         font-size: 15px;
         font-weight: 400;
     }
+}
+
+.linea-vertical{
+    height: 50%;
+    border-right: 3px solid var(--color-calido5);
 }
 
 /*-------------------FIN REDES--------------------*/
@@ -416,8 +428,8 @@ main {
 }
 
 .title-card-img {
-    width: 40%;
-    height: 75%;
+    width: 25%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -752,7 +764,7 @@ h3 {
 
     .social-network-link {
         width: 95%;
-        height: 150px;
+        height: 100px;
         margin-left: 10px;
         font-size: 20px;
     }
@@ -762,7 +774,7 @@ h3 {
         gap: 15px;
 
         .link-img {
-            font-size: 100px;
+            font-size: 70px;
         }
     }
 
@@ -772,13 +784,14 @@ h3 {
 
         h3 {
             margin-left: 0;
+            font-size: 16px;
         }
         p {
-            width: 180px;
+            width: 235px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 14px;
+            font-size: 10px;
         }
     }
 
@@ -848,8 +861,8 @@ h3 {
     }
 
     .title-card-img {
-        width: 35%;
-        height: 65%;
+        width: 30%;
+        height: 60%;
         margin-top: -2.5px;
         margin-left: 5px;
 
@@ -1021,25 +1034,34 @@ h3 {
 
     .social-container {
         width: 90%;
-        height: 70vh;
+        height: 95vh;
+    }
+
+    .links-container {
+        gap: 20px;
     }
 
     .social-network-link {
-        width: 30%;
-        height: 100%;
+        width: 95%;
+        height: 80%;
         font-size: 17px;
     }
 
     .sn-container {
-        gap: 5px;
+        gap: 25px;
         .link-img {
-            font-size: 90px;
+            font-size: 70px;
         }
-    }
 
+    }
+    
     .sn-info-container {
+
+        h3 {
+            font-size: 16px;
+        }
         p {
-            font-size: 9px;
+            font-size: 10px;
         }
     }
 
@@ -1083,8 +1105,8 @@ h3 {
     }
 
     .title-card-img {
-        width: 30%;
-        height: 70%;
+        width: 25%;
+        height: 60%;
 
         h3 {
             font-size: 22px;
@@ -1113,11 +1135,19 @@ h3 {
     }
 
     .info-general-container {
-        width: 95%;
+        width: 80%;
+
+        ion-icon {
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
     }
     
     .link-info {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     #middle-option {
@@ -1207,14 +1237,14 @@ h3 {
     }
 
     .social-network-link {
-        width: 30%;
+        width: 90%;
         font-size: 17px;
     }
 
     .sn-container {
 
         .link-img {
-            font-size: 120px;
+            font-size: 70px;
         }
     }
 
@@ -1260,8 +1290,8 @@ h3 {
     }
 
     .title-card-img {
-        width: 35%;
-        height: 65%;
+        width: 30%;
+        height: 55%;
     }
 
     /*------FIN PRODUCTOS-----*/
@@ -1294,9 +1324,10 @@ h3 {
 
 /*----------FIN RESPONSIVE TABLET------*/
 
+
 @media (width > 1280px) {
     .title-card-img{
-        width: 25%;
-        height: 75%;
+        width: 24%;
+        height: 63%;
     }
 }
