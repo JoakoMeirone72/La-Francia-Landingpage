@@ -57,7 +57,7 @@ mark::before {
 
 header {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@ header {
 
 .background-images {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,6 +113,12 @@ header {
     width: 50%;
     margin-bottom: 5%;
     filter: drop-shadow(10px 0px 15px rgba(0, 0, 0, 1));
+    transform: translateY(-50px);
+    transition: transform 1s ease;
+}
+
+#logo.visible {
+    transform: translateY(0);
 }
 
 
@@ -126,32 +132,6 @@ main {
     justify-content: space-around;
     flex: 1;
 }
-
-#scrollup-btn {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background: none;
-    box-shadow: none;
-    right: 50px;
-    bottom: 125px;
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    cursor: pointer;
-
-    ion-icon {
-        font-size: 45px;
-        color: white;
-    }
-}
-
-#scrollup-btn.show {
-    opacity: 1;
-    visibility: visible;
-}
-
 
 #wpp-btn {
     display: flex;
@@ -185,10 +165,17 @@ main {
     display: flex;
     margin: 50px 0;
 
-    img {
-        width: 35%;
-        height: auto;
-    }
+}
+
+.img-about-us {
+    width: 35%;
+    height: auto;
+    transform: translateX(100px);
+    transition: transform 1.5s ease;
+}
+
+.img-about-us.visible {
+    transform: translateX(0);
 }
 
 .title-section {
@@ -248,12 +235,17 @@ main {
     font-size: 20px;
     font-family: var(--montserrat-font);
     transition: box-shadow 0.3s ease;
-    transform: skew(-5deg);
+    transform: skew(-5deg) translateX(-200px);
+    transition: transform 1.5s ease;
+}
+
+.social-network-link.visible {
+    transform: skew(-5deg) translateX(0);
+   
 }
 
 .social-network-link:hover {
     box-shadow: 0px 0px 15px 1px rgb(65, 65, 65, 0.8);
-    transform: skew(-5deg);
 }
 
 .sn-container {
@@ -324,7 +316,7 @@ main {
     border-top: 10px solid var(--color-calido0);
 }
 
-#blend-image-product-reverse {
+.blend-image-product-reverse {
     width: 100%;
     height: 25vh;
     align-self: start;
@@ -335,7 +327,7 @@ main {
     margin-top: -10px;
 }
 
-#blend-image-product {
+.blend-image-product {
     width: 100%;
     height: 25vh;
     align-self: end;
@@ -367,6 +359,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transform: scale(0.9);
+    transition: transform 1s ease;
 
     button {
         width: 70px;
@@ -389,6 +383,10 @@ main {
     }
 }
 
+.product-article.visible {
+    transform: scale(1);
+}
+
 .pan-container, .cookie-container,
 .pepa-container, .veganita-container {
     width: 80%;
@@ -397,6 +395,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -609,6 +608,13 @@ button {
     font-weight: 600;
     box-shadow: inset 20px 20px 60px var(--color-calido5),
             inset -20px -20px 60px var(--color-calido7);
+    cursor: pointer;
+}
+
+#submitBtn:disabled {
+    background-color: grey;
+    box-shadow: inset 20px 20px 60px rgb(86, 86, 86),
+    inset -20px -20px 60px rgb(230, 229, 229);
 }
 
 
@@ -706,8 +712,54 @@ h3 {
     }
 }
 
-
 /*--------------------FIN FOOTER------------------*/
+
+/*---------------CONFIRMACION FORM----------------*/
+
+.msg-confirm-form-general-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-calido7);
+}
+
+.msg-confirm-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    ion-icon {
+        font-size: 125px;
+        color: whitesmoke;
+    }
+}
+
+#msg-confirm {
+    margin: 0;
+    font-family: var(--gagalin-font);
+    font-weight: 100;
+    font-size: 240%;
+    color: var(--color-calido5);
+}
+
+#msg-thanks {
+    margin: 0;
+    font-family: var(--montserrat-font);
+    font-weight: 800;
+    font-size: x-large;
+    color: var(--color-calido0);
+}
+
+#msg-go-back-page {
+    color: whitesmoke;
+    font-size: medium;
+
+}
+
+/*--------------FIN CONFIRMACION FORM-------------*/
 
 /*-----------------RESPONSIVE MOBILE--------------*/
 
@@ -725,16 +777,6 @@ h3 {
         }
     }
 
-    #scrollup-btn {
-        width: 20px;    
-        height: 20px;
-        bottom: 135px;
-        right: 62px;
-
-        ion-icon {
-            font-size: 45px;
-        }
-    }
 
     /*-----ABOUT US------*/
     
@@ -840,11 +882,11 @@ h3 {
     
     /*-------PRODUCTOS------*/
 
-    #blend-image-product-reverse {
+    .blend-image-product-reverse {
         height: 11vh;
     }
 
-    #blend-image-product {
+    .blend-image-product {
         height: 11vh;
     }
 
@@ -1014,16 +1056,6 @@ h3 {
         }
     }
 
-    #scrollup-btn {
-        width: 20px;    
-        height: 20px;
-        bottom: 135px;
-        right: 62px;
-
-        ion-icon {
-            font-size: 45px;
-        }
-    }
 
     /*--------HEADER--------*/
 
@@ -1109,11 +1141,11 @@ h3 {
 
     /*--------PRODUCTOS-------*/
 
-    #blend-image-product-reverse {
+    .blend-image-product-reverse {
         height: 30vh;
     }
 
-    #blend-image-product {
+    .blend-image-product {
         height: 30vh;       
     }
 
@@ -1212,17 +1244,6 @@ h3 {
         }
     }
 
-    #scrollup-btn {
-        width: 80px;
-        height: 80px;
-        bottom: 150px;
-        right: 42px;
-
-        ion-icon {
-            font-size: 65px;
-        }
-    }
-
     /*--------HEADER--------*/
 
     header {
@@ -1298,11 +1319,11 @@ h3 {
 
     /*--------PRODUCTOS-------*/
 
-    #blend-image-product-reverse {
+    .blend-image-product-reverse {
         height: 15vh;
     }
 
-    #blend-image-product {
+    .blend-image-product {
         height: 15vh;        
     }
 

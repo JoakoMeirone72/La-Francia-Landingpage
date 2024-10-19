@@ -1,21 +1,107 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const inputs = form.querySelectorAll('input, textarea');
+
+    function validateForm() {
+        let allFilled = true;
+
+  
+        inputs.forEach(input => {
+            if (!input.value) {
+                allFilled = false;
+            }
+        });
+
+    
+        submitBtn.disabled = !allFilled;
+    }
+
+   
+    inputs.forEach(input => {
+        input.addEventListener('input', validateForm);
+    });
+
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+       
+        form.submit(); 
+    });
+});
+
+
+
 document.querySelector('input[type="number"]').addEventListener('input', function (e) {
     this.value = this.value.replace(/[^0-9.]/g, '');
     this.value = this.value.replace(/[^0-9]/g, ''); 
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('#logo');
   
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+  
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
 
-window.addEventListener('scroll', function() {
-    const boton = document.getElementById('scrollup-btn');
-    if (window.scrollY > 800) {
-        boton.classList.add('show');
-    } else {
-        boton.classList.remove('show');
-    }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cards = document.querySelectorAll('.social-network-link');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
 });
 
-document.getElementById('scrollup-btn').addEventListener('click', function() {
-    document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.img-about-us');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+  
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.product-article');
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+  
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+
 
 const Panes = [
     {

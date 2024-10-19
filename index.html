@@ -16,14 +16,10 @@
 
     <main>
 
-        <button id="scrollup-btn" href="#header" >
-            <ion-icon name="caret-up-circle-outline"></ion-icon>
-        </button>
         <a id="wpp-btn" href="
         https://api.whatsapp.com/send/?phone=5493413041302&text=Hola+La+Francia%21+Quiero+sus+productos&type=phone_number&app_absent=0" target="_blank">
             <ion-icon name="logo-whatsapp"></ion-icon>
         </a>
-
 
         <section class="about-us-container">
                 <div class="title-description-container">
@@ -32,7 +28,7 @@
                         Descubrí el sabor auténtico de la panadería artesanal con La Francia. Nuestros panes, elaborados con masa madre y una cuidadosa selección de ingredientes naturales, junto con nuestra línea dulce, con pepas, cookies integrales y veganas, son la opción perfecta para quienes buscan alternativas saludables y deliciosas.
                     </p>
                 </div>
-                <img src="./assets/images/about-us-img.png">
+                <img class="img-about-us" src="./assets/images/about-us-img.png">
         </section>
 
         <div class="divisor-line"></div>
@@ -87,7 +83,7 @@
 
         <section class="products-section">
 
-            <img id="blend-image-product-reverse" src="./assets/images/blend-img.png" alt="blend image">
+            <img class="blend-image-product-reverse" src="./assets/images/blend-img.png" alt="blend image">
             <div class="products-container">
                 <h1 class="title-section">Productos</h1>
                 <div class="title-container">
@@ -192,7 +188,7 @@
                 </article>
             </div>
             
-            <img id="blend-image-product" src="./assets/images/blend-img.png" alt="blend image">
+            <img class="blend-image-product" src="./assets/images/blend-img.png" alt="blend image">
         </section>
 
         <section class="map-form-container">
@@ -200,22 +196,26 @@
                 <h3 class="title-section">De<mark> Rosario </mark>para todo el país</h3>
                 <div id="img-rosario"></div>
             </div>
-            <form>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <h3 class="title-section">¡Contactános!</h3>
                 <div class="form-container">
-                    <input type="text" placeholder="Nombre y Apellido">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Teléfono">
-                    <textarea type="text" placeholder="Tu Mensaje . . ."></textarea>  
-                    <button>Enviar Mensaje</button>              
+                    <input type="hidden" name="access_key" value="f55c1d7d-4f55-43fc-a590-672fbe484424">
+                    <input type="hidden" name="redirect" value="http://www.lafranciapanificacion.com/success-form.html">
+                
+                    <input type="text" placeholder="Nombre y Apellido" name="Nombre" autocomplete="off" required>
+                    <input type="email" placeholder="Email" name="Email" autocomplete="off" required>
+                    <input type="number" placeholder="Teléfono" name="Teléfono" autocomplete="off" required>
+                    <textarea placeholder="Tu Mensaje . . ." name="Mensaje" autocomplete="off" required></textarea>  
+                    <button type="submit" id="submitBtn" disabled>Enviar Mensaje</button>              
                 </div>
             </form>
+            
         </section>
 
     </main>  
 
     <footer>
-        <img id="blend-image-product-reverse" src="./assets/images/blend-img.png" alt="blend image">
+        <img class="blend-image-product-reverse" src="./assets/images/blend-img.png" alt="blend image">
         <div class="footer-container">
             <div class="logo-footer-container">
                 <div class="line"></div>
@@ -250,6 +250,5 @@
     <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
 </body>
 </html>
