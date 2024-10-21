@@ -1,3 +1,20 @@
+function preloadImages() {
+    const images = [
+        ...Panes.map(pan => pan.image),
+        ...Cookies.map(cookie => cookie.image),
+        ...Pepas.map(pepa => pepa.image),
+        ...Veganitas.map(veganita => veganita.image),
+    ];
+    
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  }
+  
+  window.onload = preloadImages;
+  
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -224,21 +241,21 @@ const Cookies = [
 
 const Pepas = [
     {
-        image: './assets/images/Productos/DSC00328.jpeg',
+        image: './assets/images/productos/DSC00328.jpeg',
         name: 'MEMBRILLO Y CHÍA',
         description: 'Elaboradas con avena y harina integral, rellenas con membrillo. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#CC5754',
         containerColor: 'rgba(204, 87, 84, 0.9)'
     },
     {
-        image: './assets/images/Productos/DSC00272.jpeg',
+        image: './assets/images/productos/DSC00272.jpeg',
         name: 'ALGARROBA Y MEMBRILLO',
         description: 'Elaboradas con avena, harina integral y harina de algarroba, rellenas con membrillo. Fuente de fibra y proteína',
         color: '#735DA4',
         containerColor: 'rgba(115, 93, 164, 0.9)'
     },
     {
-        image: './assets/images/Productos/DSC00355.jpeg',
+        image: './assets/images/productos/DSC00355.jpeg',
         name: 'BATATA Y CHÍA',
         description: 'Elaboradas con avena y harina integral, rellenas con batata. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#D2A272',
@@ -248,28 +265,28 @@ const Pepas = [
 
 const Veganitas = [
     {
-        image: './assets/images/Productos/10-DSC05734.jpg',
+        image: './assets/images/productos/10-DSC05734.jpg',
         name: 'ALGARROBA Y NUEZ',
         description: ' Galletitas integrales y veganas, con harina de algarroba y agregado de nueces en su interior',
         color: '#B85719',
         containerColor: 'rgba(184, 87, 25, 0.9)'
     },
     {
-        image: './assets/images/Productos/9-DSC05718.jpg',
+        image: './assets/images/productos/9-DSC05718.jpg',
         name: 'LIMÓN Y CHÍA',
         description: 'Galletitas integrales y veganas, suave sabor a limón, combinado con la crocantes de las semillas de chía',
         color: '#D5C800',
         containerColor: 'rgba(213, 200, 0, 0.9)'
     },
     {
-        image: './assets/images/Productos/18-DSC05703.jpg',
+        image: './assets/images/productos/18-DSC05703.jpg',
         name: 'COCO Y AVENA',
         description: ' Galletitas integrales y veganas, con agregado de avena y suave sabor a coco',
         color: '#2C89DA',
         containerColor: 'rgba(44, 137, 218, 0.9)'
     },
     {
-        image: './assets/images/Productos/manzanagranola.jpeg',
+        image: './assets/images/productos/manzanagranola.jpeg',
         name: 'MANZANA Y GRANOLA',
         description: ' Galletitas integrales y veganas, cuentan con pedacitos de granola combinados con el rico sabor de la manzana',
         color: '#F44A41',
