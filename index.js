@@ -4,6 +4,13 @@ function preloadImages() {
         ...Cookies.map(cookie => cookie.image),
         ...Pepas.map(pepa => pepa.image),
         ...Veganitas.map(veganita => veganita.image),
+        './assets/images/paper-clip.png',
+        './assets/images/AVY09690.jpeg',
+        './assets/images/10-DSC05734.jpg',
+        './assets/images/DSC00127.jpeg',
+        './assets/images/DSC00304.jpeg',
+        './assets/images/DSC00321.jpeg',
+        './assets/images/DSC00341.jpeg'
     ];
     
     images.forEach((image) => {
