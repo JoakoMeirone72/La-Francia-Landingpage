@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>La Francia panificaci&oacute;n</title>
-    <link rel="stylesheet" href="./style.css?v=2.0">
+    <title>La Francia Panificaci&oacute;n</title>
+    <link rel="stylesheet" href="./style.css?v=3.1">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/1dbe03d5b6.js"
+      crossorigin="anonymous"></script>
+	<script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 <body>
     <header id="header">
@@ -87,33 +92,30 @@
             <img class="blend-image-product-reverse" src="./assets/images/blend-img.png" alt="blend image">
             <div class="products-container">
                 <h1 class="title-section">Productos</h1>
-                <div class="instructivo-msg-container">
-                    <p id="instructivo-msg">Descubre la variedad de nuestros productos avanzando "<ion-icon name="caret-forward-outline"></ion-icon>" y retrocediendo "<ion-icon name="caret-back-outline"></ion-icon>" entre las opciones </p>
-                </div>
                 <div class="title-container">
                     <div class="linea"></div>
                     <h2 class="product-title">Panes</h2>
                     <div class="linea"></div>
                 </div>
                 <article class="product-article">
+                    <button class="pan-back-btn">
+                        <i class="fa-sharp fa-solid fa-circle-left fa-icon"></i>
+                    </button>
                     <div class="pan-container">
                         <div class="card-btns-container">
-                            <button class="pan-back-btn">
-                                <ion-icon name="caret-back-outline"></ion-icon>
-                            </button>
                             <div class="title-card-img-container">
                                 <div class="title-card-img">
                                     <h3 class="pan-title"></h3>
                                 </div>
                             </div>
-                            <button class="pan-next-btn">
-                                <ion-icon name="caret-forward-outline"></ion-icon>
-                            </button>
                         </div>
                         <div class="description-container" id="description-pan-container">
                             <p class="pan-description"></p>
                         </div>
                     </div>
+                    <button class="pan-next-btn">
+                        <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
+                    </button>
                 </article>
                 <div class="title-container">
                     <div class="linea"></div>
@@ -121,24 +123,24 @@
                     <div class="linea"></div>
                 </div>
                 <article class="product-article">
+                    <button class="cookie-back-btn">
+                        <i class="fa-sharp fa-solid fa-circle-left fa-icon"></i>
+                    </button>
                     <div class="cookie-container">
                         <div class="card-btns-container">
-                            <button class="cookie-back-btn">
-                                <ion-icon name="caret-back-outline"></ion-icon>
-                            </button>
                             <div class="title-card-img-container">
                                 <div class="title-card-img">
                                     <h3 class="cookie-title"></h3>
                                 </div>
                             </div>
-                            <button class="cookie-next-btn">
-                                <ion-icon name="caret-forward-outline"></ion-icon>
-                            </button>
                         </div>
                         <div class="description-container" id="description-cookie-container">
                             <p class="cookie-description"></p>
                         </div>
                     </div>
+                    <button class="cookie-next-btn">
+                        <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
+                    </button>
                 </article>
                 <div class="title-container">
                     <div class="linea"></div>
@@ -146,49 +148,24 @@
                     <div class="linea"></div>
                 </div>
                 <article class="product-article">
+                    <button class="pepa-back-btn">
+                        <i class="fa-sharp fa-solid fa-circle-left fa-icon"></i>
+                    </button>
                     <div class="pepa-container">
                         <div class="card-btns-container">
-                            <button class="pepa-back-btn">
-                                <ion-icon name="caret-back-outline"></ion-icon>
-                            </button>
                             <div class="title-card-img-container">
                                 <div class="title-card-img">
                                     <h3 class="pepa-title"></h3>
                                 </div>
                             </div>
-                            <button class="pepa-next-btn">
-                                <ion-icon name="caret-forward-outline"></ion-icon>
-                            </button>
                         </div>
                         <div class="description-container" id="description-pepa-container">
                             <p class="pepa-description"></p>
                         </div>
                     </div>
-                </article>
-                <div class="title-container">
-                    <div class="linea"></div>
-                    <h2 class="product-title">Veganas</h2>
-                    <div class="linea"></div>
-                </div>
-                <article class="product-article">
-                    <div class="veganita-container">
-                        <div class="card-btns-container">
-                            <button class="veganita-back-btn">
-                                <ion-icon name="caret-back-outline"></ion-icon>
-                            </button>
-                            <div class="title-card-img-container">
-                                <div class="title-card-img">
-                                    <h3 class="veganita-title"></h3>
-                                </div>
-                            </div>
-                            <button class="veganita-next-btn">
-                                <ion-icon name="caret-forward-outline"></ion-icon>
-                            </button>
-                        </div>
-                        <div class="description-container" id="description-veganita-container">
-                            <p class="veganita-description"></p>
-                        </div>
-                    </div>
+                    <button class="pepa-next-btn">
+                        <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
+                    </button>
                 </article>
             </div>
             
@@ -201,16 +178,20 @@
                 <div id="img-rosario"></div>
             </div>
             <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                <h3 class="title-section">¡Contactános!</h3>
+                <h3 class="title-section">¡Contactanos!</h3>
                 <div class="form-container">
-                    <input type="hidden" name="access_key" value="f55c1d7d-4f55-43fc-a590-672fbe484424">
+
+                    <input type="hidden" name="access_key" value="805bcea3-9681-48b5-adc1-5d9ac4510a3e">
                     <input type="hidden" name="redirect" value="http://www.lafranciapanificacion.com/success-form.html">
                 
                     <input type="text" placeholder="Nombre y Apellido" name="Nombre" autocomplete="off" required>
                     <input type="email" placeholder="Email" name="Email" autocomplete="off" required>
                     <input type="number" placeholder="Teléfono" name="Teléfono" autocomplete="off" required>
                     <textarea placeholder="Tu Mensaje . . ." name="Mensaje" autocomplete="off" required></textarea>  
-                    <button type="submit" id="submitBtn" disabled>Enviar Mensaje</button>              
+
+                    <div class="h-captcha" data-captcha="true" data-sitekey="dd2aeb16-ab0e-4212-ab3c-127c956e27aa" data-callback="onSubmit"></div>
+
+                    <button type="button" onclick="executeCaptcha()" id="submitBtn" disabled>Enviar Mensaje</button>              
                 </div>
             </form>
             
@@ -232,7 +213,7 @@
                     <h3>TELÉFONO</h3>
                     <div class="phones-container">
                         <a class="link-info" href="tel:(0341) 4369210" target="_blank">(0341) 4369210 / </a>
-                        <a class="link-info" href="tel:(0341) 4373122" target="_blank">(0341) 4373122</a>
+                        <a class="link-info" href="tel:(0341) 4373122" target="_blank">(0341) 3041302</a>
                     </div>
                 </div>
                 <div class="info-footer-container" id="middle-option">
@@ -251,7 +232,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="./index.js?v=2.0"></script>
+    <script src="./index.js?v=3.1"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

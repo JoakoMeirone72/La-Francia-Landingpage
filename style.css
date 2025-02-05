@@ -347,28 +347,6 @@ main {
     margin-bottom: -5px;
 }
 
-.instructivo-msg-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-calido0);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 0 0 30px;
-    box-shadow: inset 0px 0px 10px 1px rgb(65, 65, 65, 0.8);
-}
-
-#instructivo-msg {
-    color: white;
-    font-size: 15px;
-    font-family: var(--montserrat-font);
-    font-weight: 700;
-    margin: 0;
-    text-align: center;
-    color: var(--color-calido5);
-}
-
 .products-container {
     width: 90%;
     display: flex;
@@ -404,11 +382,9 @@ main {
         box-shadow: none;
         cursor: pointer;
         
-        ion-icon {
-            align-self: end;
-            font-size: 100px;
-            color: white;
-        }
+        .fa-icon {
+            font-size: 3.5rem;
+        } 
     }
 }
 
@@ -499,7 +475,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: -5px;
-    margin-left: 15px;
+    margin-left: 50px;
     background-image: url(./assets/images/paper-clip.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -923,19 +899,6 @@ h3 {
         height: 11vh;
     }
 
-    .instructivo-msg-container {
-        width: 90%;
-        padding: 16px;
-        margin: 0 0 20px;
-    }
-
-    #instructivo-msg {
-        margin: 0;
-        width: 90%;
-        text-align: center;
-        font-size: 10px;
-    }
-
     .products-container {
         width: 100%;
 
@@ -961,21 +924,22 @@ h3 {
     }
 
     .product-article {
-        height: 25vh;
+        height: 20vh;
+        width: 100%;
         margin: 10px 0;
 
         button {
-            width: 40px;
+            width: 35px;
 
-            ion-icon {
-                font-size: 50px;
+            .fa-icon {
+                font-size: 1.5rem;
             }
         }
     }
 
     .pan-container, .cookie-container,
     .pepa-container, .veganita-container {
-        width: 100%;
+        width: 80%;
         height: 100%;
         border-radius: 20px;
     }
@@ -990,13 +954,13 @@ h3 {
     }
 
     .title-card-img {
-        width: 30%;
+        width: 25%;
         height: 60%;
-        margin-top: -2.5px;
-        margin-left: 5px;
+        margin-top: -2px;
+        margin-left: 15px;
 
         h3 {
-            font-size: 15px;
+            font-size: 12px;
         }
     }
 
@@ -1199,10 +1163,6 @@ h3 {
         height: 30vh;       
     }
 
-    #instructivo-msg {
-        font-size: 12px;
-    }
-
     .products-container {
         width: 100%;
 
@@ -1215,6 +1175,10 @@ h3 {
     .product-article {
         width: 100%;
         height: 80vh;
+    }
+
+    .fa-icon {
+        font-size: 1rem;
     }
 
     .pan-container, .cookie-container, 
@@ -1385,10 +1349,6 @@ h3 {
         height: 15vh;        
     }
 
-    #instructivo-msg {
-        font-size: 12px;
-    }
-
     .products-container {
         width: 100%;
 
@@ -1405,11 +1365,16 @@ h3 {
 
     .pan-container, .cookie-container, 
     .pepa-container, .veganita-container {
-        width: 90%;
+        width: 80%;
+        height: 85%;
     }
 
     .description-container {
         opacity: 1;
+
+        p {
+            font-size: 15px;
+        }
     }
 
     .title-card-img {
@@ -1450,7 +1415,8 @@ h3 {
 
 @media (width > 1280px) {
     .title-card-img{
-        width: 24%;
-        height: 63%;
+        width: 20%;
+        height: 60%;
     }
+
 }

@@ -1,3 +1,5 @@
+//Pre-carga de imagenes --------------------------------------
+
 function preloadImages() {
     const images = [
         ...Panes.map(pan => pan.image),
@@ -21,7 +23,19 @@ function preloadImages() {
   
   window.onload = preloadImages;
   
+//Captcha -----------------------------------------------------
 
+function executeCaptcha() {
+    hcaptcha.execute(); 
+}
+
+
+function onSubmit(token) {
+   
+    document.getElementById("contactForm").submit();
+}
+
+// Habilitación del botón de enviar ----------------------------
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -30,36 +44,29 @@ document.addEventListener('DOMContentLoaded', () => {
     function validateForm() {
         let allFilled = true;
 
-  
         inputs.forEach(input => {
             if (!input.value) {
                 allFilled = false;
             }
         });
 
-    
         submitBtn.disabled = !allFilled;
     }
 
-   
     inputs.forEach(input => {
         input.addEventListener('input', validateForm);
     });
-
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault(); 
-       
-        form.submit(); 
-    });
 });
 
-
+//Type number ----------------------------------------------------------------
 
 document.querySelector('input[type="number"]').addEventListener('input', function (e) {
     this.value = this.value.replace(/[^0-9.]/g, '');
     this.value = this.value.replace(/[^0-9]/g, ''); 
   });
+
+
+//Animaciones -----------------------------------------------------------------
 
   document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('#logo');
@@ -126,6 +133,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+
+//Productos ---------------------------------------------------------------------------------
 
 const Panes = [
     {
@@ -304,7 +313,6 @@ const Veganitas = [
 let currentPanIndex = 0;
 let currentCookieIndex = 0;
 let currentPepaIndex = 0;
-let currentVeganitaIndex = 0;
 
 
 function nextProduct(productsArray, currentIndex) {
@@ -335,7 +343,6 @@ function updateProduct(containerSelector, titleSelector, descriptionSelector, co
 updateProduct('.pan-container', '.pan-title', '.pan-description', '#description-pan-container', Panes, currentPanIndex);
 updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
 updateProduct('.pepa-container', '.pepa-title', '.pepa-description', '#description-pepa-container', Pepas, currentPepaIndex);
-updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
 
 
 // Event listeners para los botones de Pan
@@ -371,16 +378,4 @@ document.querySelector('.pepa-next-btn').addEventListener('click', () => {
 document.querySelector('.pepa-back-btn').addEventListener('click', () => {
     currentPepaIndex = previousProduct(Pepas, currentPepaIndex);
     updateProduct('.pepa-container', '.pepa-title', '.pepa-description', '#description-pepa-container', Pepas, currentPepaIndex);
-});
-
-
-// Event listeners para los botones de Veganitas
-document.querySelector('.veganita-next-btn').addEventListener('click', () => {
-    currentVeganitaIndex = nextProduct(Veganitas, currentVeganitaIndex);
-    updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
-});
-
-document.querySelector('.veganita-back-btn').addEventListener('click', () => {
-    currentVeganitaIndex = previousProduct(Veganitas, currentVeganitaIndex);
-    updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
 });
