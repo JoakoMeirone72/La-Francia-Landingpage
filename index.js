@@ -23,17 +23,6 @@ function preloadImages() {
   
   window.onload = preloadImages;
   
-//Captcha -----------------------------------------------------
-
-function executeCaptcha() {
-    hcaptcha.execute(); 
-}
-
-
-function onSubmit(token) {
-   
-    document.getElementById("contactForm").submit();
-}
 
 // Habilitación del botón de enviar ----------------------------
 document.addEventListener('DOMContentLoaded', () => {
@@ -311,8 +300,9 @@ const Veganitas = [
 ]
 
 let currentPanIndex = 0;
-let currentCookieIndex = 0;
+// let currentCookieIndex = 0;
 let currentPepaIndex = 0;
+// let currentVeganitaIndex = 0;
 
 
 function nextProduct(productsArray, currentIndex) {
@@ -341,8 +331,9 @@ function updateProduct(containerSelector, titleSelector, descriptionSelector, co
 
 
 updateProduct('.pan-container', '.pan-title', '.pan-description', '#description-pan-container', Panes, currentPanIndex);
-updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
+// updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
 updateProduct('.pepa-container', '.pepa-title', '.pepa-description', '#description-pepa-container', Pepas, currentPepaIndex);
+// updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
 
 
 // Event listeners para los botones de Pan
@@ -358,15 +349,15 @@ document.querySelector('.pan-back-btn').addEventListener('click', () => {
 
 
 // Event listeners para los botones de Cookies
-document.querySelector('.cookie-next-btn').addEventListener('click', () => {
-    currentCookieIndex = nextProduct(Cookies, currentCookieIndex);
-    updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
-});
+// document.querySelector('.cookie-next-btn').addEventListener('click', () => {
+//     currentCookieIndex = nextProduct(Cookies, currentCookieIndex);
+//     updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
+// });
 
-document.querySelector('.cookie-back-btn').addEventListener('click', () => {
-    currentCookieIndex = previousProduct(Cookies, currentCookieIndex);
-    updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
-});
+// document.querySelector('.cookie-back-btn').addEventListener('click', () => {
+//     currentCookieIndex = previousProduct(Cookies, currentCookieIndex);
+//     updateProduct('.cookie-container', '.cookie-title', '.cookie-description', '#description-cookie-container', Cookies, currentCookieIndex);
+// });
 
 
 // Event listeners para los botones de Pepas
@@ -379,3 +370,14 @@ document.querySelector('.pepa-back-btn').addEventListener('click', () => {
     currentPepaIndex = previousProduct(Pepas, currentPepaIndex);
     updateProduct('.pepa-container', '.pepa-title', '.pepa-description', '#description-pepa-container', Pepas, currentPepaIndex);
 });
+
+// // Event listeners para los botones de Veganitas
+// document.querySelector('.veganita-next-btn').addEventListener('click', () => {
+//   currentVeganitaIndex = nextProduct(Veganitas, currentVeganitaIndex);
+//   updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
+// });
+
+// document.querySelector('.veganita-back-btn').addEventListener('click', () => {
+//   currentVeganitaIndex = previousProduct(Veganitas, currentVeganitaIndex);
+//   updateProduct('.veganita-container', '.veganita-title', '.veganita-description', '#description-veganita-container', Veganitas, currentVeganitaIndex);
+// });

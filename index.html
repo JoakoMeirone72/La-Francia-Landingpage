@@ -8,8 +8,7 @@
     <script
       src="https://kit.fontawesome.com/1dbe03d5b6.js"
       crossorigin="anonymous"></script>
-	<script src="https://hcaptcha.com/1/api.js" async defer></script>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <header id="header">
@@ -117,7 +116,7 @@
                         <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
                     </button>
                 </article>
-                <div class="title-container">
+                <!-- <div class="title-container">
                     <div class="linea"></div>
                     <h2 class="product-title">Cookies</h2>
                     <div class="linea"></div>
@@ -141,7 +140,7 @@
                     <button class="cookie-next-btn">
                         <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
                     </button>
-                </article>
+                </article> -->
                 <div class="title-container">
                     <div class="linea"></div>
                     <h2 class="product-title">Pepas</h2>
@@ -167,6 +166,31 @@
                         <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
                     </button>
                 </article>
+                <!-- <div class="title-container">
+                    <div class="linea"></div>
+                    <h2 class="product-title">Veganitas</h2>
+                    <div class="linea"></div>
+                </div>
+                <article class="product-article">
+                    <button class="veganita-back-btn">
+                        <i class="fa-sharp fa-solid fa-circle-left fa-icon"></i>
+                    </button>
+                    <div class="veganita-container">
+                        <div class="card-btns-container">
+                            <div class="title-card-img-container">
+                                <div class="title-card-img">
+                                    <h3 class="veganita-title"></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-container" id="description-veganita-container">
+                            <p class="veganita-description"></p>
+                        </div>
+                    </div>
+                    <button class="veganita-next-btn">
+                        <i class="fa-sharp fa-solid fa-circle-right fa-icon"></i>
+                    </button>
+                </article> -->
             </div>
             
             <img class="blend-image-product" src="./assets/images/blend-img.png" alt="blend image">
@@ -177,21 +201,18 @@
                 <h3 class="title-section">De<mark> Rosario </mark>para todo el país</h3>
                 <div id="img-rosario"></div>
             </div>
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" action="https://formsubmit.co/contacto@lafranciapanificacion.com" method="POST">
                 <h3 class="title-section">¡Contactanos!</h3>
                 <div class="form-container">
 
-                    <input type="hidden" name="access_key" value="805bcea3-9681-48b5-adc1-5d9ac4510a3e">
-                    <input type="hidden" name="redirect" value="http://www.lafranciapanificacion.com/success-form.html">
+                    <input type="hidden" name="_next" value="https://www.lafranciapanificacion.com/success-form.html">
                 
                     <input type="text" placeholder="Nombre y Apellido" name="Nombre" autocomplete="off" required>
                     <input type="email" placeholder="Email" name="Email" autocomplete="off" required>
                     <input type="number" placeholder="Teléfono" name="Teléfono" autocomplete="off" required>
                     <textarea placeholder="Tu Mensaje . . ." name="Mensaje" autocomplete="off" required></textarea>  
 
-                    <div class="h-captcha" data-captcha="true" data-sitekey="dd2aeb16-ab0e-4212-ab3c-127c956e27aa" data-callback="onSubmit"></div>
-
-                    <button type="button" onclick="executeCaptcha()" id="submitBtn" disabled>Enviar Mensaje</button>              
+                    <button type="submit" id="submitBtn" disabled>Enviar Mensaje</button>              
                 </div>
             </form>
             
