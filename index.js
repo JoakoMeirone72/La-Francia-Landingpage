@@ -12,7 +12,7 @@ function preloadImages() {
         './assets/images/DSC00127.jpeg',
         './assets/images/DSC00304.jpeg',
         './assets/images/DSC00321.jpeg',
-        './assets/images/DSC00341.jpeg'
+        './assets/images/DSC_0530.jpg'
     ];
     
     images.forEach((image) => {
@@ -253,14 +253,14 @@ const Pepas = [
         containerColor: 'rgba(204, 87, 84, 0.9)'
     },
     {
-        image: './assets/images/productos/DSC00272.jpeg',
+        image: './assets/images/productos/DSC_0540.jpg',
         name: 'ALGARROBA Y MEMBRILLO',
         description: 'Elaboradas con avena, harina integral y harina de algarroba, rellenas con membrillo. Fuente de fibra y proteína',
         color: '#735DA4',
         containerColor: 'rgba(115, 93, 164, 0.9)'
     },
     {
-        image: './assets/images/productos/DSC00355.jpeg',
+        image: './assets/images/productos/DSC_0554.jpg',
         name: 'BATATA Y CHÍA',
         description: 'Elaboradas con avena y harina integral, rellenas con batata. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#D2A272',
