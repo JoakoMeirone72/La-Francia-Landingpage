@@ -3,15 +3,15 @@
 function preloadImages() {
     const images = [
         ...Panes.map(pan => pan.image),
-        ...Cookies.map(cookie => cookie.image),
+        // ...Cookies.map(cookie => cookie.image),
         ...Pepas.map(pepa => pepa.image),
-        ...Veganitas.map(veganita => veganita.image),
+        // ...Veganitas.map(veganita => veganita.image),
         './assets/images/paper-clip.png',
         './assets/images/AVY09690.jpeg',
-        './assets/images/10-DSC05734.jpg',
-        './assets/images/DSC00127.jpeg',
-        './assets/images/DSC00304.jpeg',
-        './assets/images/DSC00321.jpeg',
+        './assets/images/AVY09695.jpeg',
+        './assets/images/AVY09779.jpeg',
+        './assets/images/AVY09686.jpeg',
+        './assets/images/DSC_0027.jpeg',
         './assets/images/DSC_0530.jpg'
     ];
     
@@ -246,7 +246,7 @@ const Cookies = [
 
 const Pepas = [
     {
-        image: './assets/images/productos/DSC00328.jpeg',
+        image: './assets/images/productos/DSC_0012.jpeg',
         name: 'MEMBRILLO Y CHÍA',
         description: 'Elaboradas con avena y harina integral, rellenas con membrillo. En su amasado se integran semillas de chía. Fuente de fibra y proteína',
         color: '#CC5754',

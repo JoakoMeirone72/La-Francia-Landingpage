@@ -77,25 +77,25 @@ header {
 
 @keyframes slideShow {
     0% {
-        background-image: url('./assets/images/DSC00321.jpeg');
+        background-image: url('./assets/images/DSC_0027.jpeg');
       }
       16.67% {
-        background-image: url('./assets/images/DSC00127.jpeg');
+        background-image: url('./assets/images/AVY09695.jpeg');
       }
       33.33% {
         background-image: url('./assets/images/AVY09690.jpeg');
       }
       50% {
-        background-image: url('./assets/images/DSC00304.jpeg');
-      }
-      66.67% {
-        background-image: url('./assets/images/AVY09737.jpeg');
-      }
-      83.33% {
         background-image: url('./assets/images/DSC_0530.jpg');
       }
+      66.67% {
+        background-image: url('./assets/images/AVY09779.jpeg');
+      }
+      83.33% {
+        background-image: url('./assets/images/AVY09686.jpeg');
+      }
       100% {
-        background-image: url('./assets/images/DSC00321.jpeg');
+        background-image: url('./assets/images/DSC_0027.jpeg');
       }
 }
 
@@ -103,7 +103,7 @@ header {
     position: absolute;
     width: 100%;    
     height: 95vh;
-    background-image: url('./assets/images/DSC00321.jpeg');
+    background-image: url('./assets/images/DSC_0027.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
